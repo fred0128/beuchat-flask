@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    background-color: #999;
+    border: 1px solid #111;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s all ease-out;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid red;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(179, 252, 246);
+}
+
+#messages {
+    background-color: #000000;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#messages p {
+    border-bottom: 1px solid #fff;
+}
+
+.writing {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    position: absolute;
+    bottom: 1px;
+}
+
+#username {
+    width: 20%;
+}
